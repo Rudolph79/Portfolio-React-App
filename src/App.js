@@ -1,10 +1,12 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min";
+import Navbar from "./components/Navbar";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h2>Portfolio Project ...</h2>
+      <Navbar />
     </div>
   );
 }
