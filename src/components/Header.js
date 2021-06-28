@@ -10,8 +10,8 @@ const Header = () => {
                     className="typed-text"
                     strings={[
                         "Front Developer : ", "HTML 5,", "CSS 3,", "JavaScript,", "and jQuery...",
-                        "Back Developer : ", "PHP 5 & 7,", "Java,", "Python,", "NodeJS...",
-                        "Frameworks : ", "Symfony 2,3,4 and 5,", "Angular,", "VueJS,", " and React JS...",
+                        "Back Developer : ", "PHP 5 & 7,", "Java 8,", "Python,", "NodeJS...",
+                        "Frameworks : ", "Symfony 2,3,4 and 5,", "Angular 7 and 8,", "VueJS 2,", " and React JS...",
                         "Mobile Development : ", "React Native, ", "Ionic, ", "and Flutter...",
                         "Technologies : ", "AWS, ", "GitHub", "GitLab", "Jenkins", "Docker ..."
                     ]}
