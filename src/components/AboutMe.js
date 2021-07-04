@@ -22,12 +22,12 @@ const AboutMe = () => {
                     </p>
                     <p>
                         My secondary school was <strong>Sainte Marie</strong> and my high School was
-                        <strong>Bessieux High School</strong> (<em>Boulevard Bessieux</em>).<br />
+                        <strong> Bessieux High School</strong> (<em>Boulevard Bessieux</em>).<br />
                         After my baccalaureate I went to the <strong>CPGE</strong> where I did 3 years
                         because I did 5/2.
                     </p>
                     <p>
-                        The first engineering school was <strong>ISEP</strong>(<em>in Paris</em>
+                        The first engineering school was <strong>ISEP</strong>(<em>in Paris </em>
                         6<sup>th</sup> Area) and my second was <strong>Telecom ParisTech</strong> (<em>in
                         Paris</em>) 13<sup>rd</sup> Area.<br />
                         Following my studies, I became a Telecom and Signal Processing Engineer, then

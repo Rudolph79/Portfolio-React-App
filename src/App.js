@@ -7,6 +7,7 @@ import AboutMe from "./components/AboutMe";
 import Particles from "react-particles-js";
 import Services from "./components/Service";
 import Experience from "./components/Experience";
+import Portfolio from "./components/Portfolio";
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
       <AboutMe />
       <Services />
       <Experience />
+      <Portfolio />
     </div>
   );
 }
