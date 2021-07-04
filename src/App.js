@@ -8,6 +8,7 @@ import Particles from "react-particles-js";
 import Services from "./components/Service";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
       <Services />
       <Experience />
       <Portfolio />
+      <Testimonials />
     </div>
   );
 }
