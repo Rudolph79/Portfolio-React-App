@@ -74,7 +74,7 @@ nav ul li {
   background: url("wall-and-laptop-background.jpg");
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -120,6 +120,7 @@ nav ul li {
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
+  cursor: pointer;
 }
 
 .btn-main-offer:hover {
@@ -344,7 +345,10 @@ nav ul li {
 .portfolio-image-box:hover .overflow {
   opacity: 60%;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
+
+
 
 .portfolio-icon {
   position: absolute;
@@ -370,6 +374,10 @@ nav ul li {
 .hyper-link {
   cursor: pointer;
   color: var(--primary-orange);
+}
+
+popupbox-wrapper {
+  margin-top: 7rem;
 }
 
 /****************** MEDIA ********************/
@@ -567,4 +575,26 @@ textarea.form-control {
 input:focus+.line, textarea:focus+.line {
   width: 100%;
   transition: width 0.5s ease-in-out;
+}
+
+/****************** FOOTER ********************/
+.footer {
+  background: #5A5655;
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
