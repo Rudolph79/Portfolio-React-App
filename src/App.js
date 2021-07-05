@@ -9,6 +9,7 @@ import Services from "./components/Service";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
       <Experience />
       <Portfolio />
       <Testimonials />
+      <Contact />
     </div>
   );
 }

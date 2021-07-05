@@ -46,16 +46,15 @@ const Portfolio = () => {
 
             </>
         )
-        PopupboxManager.open({ content })
-    }
-
-    const popupboxConfigEcommerce = {
-        titleBar: {
-            enable: true,
-            text: "Emarh E-commerce"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Emarh E-commerce"
+                }
+            }
+        })
     }
 
     // EMARH FREELANCE
@@ -87,20 +86,18 @@ const Portfolio = () => {
 
             </>
         )
-        PopupboxManager.open({ content })
-    }
-
-    const popupboxConfigFreelance = {
-        titleBar: {
-            enable: true,
-            text: "Emarh Freelance"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Emarh Freelance"
+                }
+            }
+        })
     }
 
     // COVID-19
-    // EMARH ECOMMERCE
     const covid19Popup = () => {
         const content = (
             <>
@@ -131,17 +128,17 @@ const Portfolio = () => {
 
             </>
         )
-        PopupboxManager.open({ content })
+        PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Covid-19 Application"
+                }
+            }
+        })
     }
 
-    const popupboxConfigCovid19 = {
-        titleBar: {
-            enable: true,
-            text: "Covid-19 Application"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
 
     // HELLO FROM PARIS
     const helloFromParisPopup = () => {
@@ -171,16 +168,15 @@ const Portfolio = () => {
 
             </>
         )
-        PopupboxManager.open({ content })
-    }
-
-    const popupboxConfigHello = {
-        titleBar: {
-            enable: true,
-            text: "Hello From Paris"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Say Hello"
+                }
+            }
+        })
     }
 
     // TODO_LIST
@@ -212,16 +208,15 @@ const Portfolio = () => {
 
             </>
         )
-        PopupboxManager.open({ content })
-    }
-
-    const popupboxConfigTodoList = {
-        titleBar: {
-            enable: true,
-            text: "Todo-List"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Todo-List"
+                }
+            }
+        })
     }
 
     // EASY MPC
@@ -252,7 +247,17 @@ const Portfolio = () => {
 
             </>
         )
-        PopupboxManager.open({ content })
+        PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Easy MPC"
+                },
+                fadeIn: true,
+                fadeInSpeed: 500
+            }
+        })
     }
 
     const popupboxConfigEasyMPC = {
@@ -292,16 +297,17 @@ const Portfolio = () => {
 
             </>
         )
-        PopupboxManager.open({ content })
-    }
-
-    const popupboxConfigReactMovies = {
-        titleBar: {
-            enable: true,
-            text: "React Movies"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "React Movies"
+                },
+                fadeIn: true,
+                fadeInSpeed: 500
+            }
+        })
     }
 
     // SEND IMAGE
@@ -332,16 +338,18 @@ const Portfolio = () => {
 
             </>
         )
-        PopupboxManager.open({ content })
-    }
+        PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Send Image"
+                },
+                fadeIn: true,
+                fadeInSpeed: 500
+            }
+        })
 
-    const popupboxConfigSendImages = {
-        titleBar: {
-            enable: true,
-            text: "Send Image"
-        },
-        fadeIn: true,
-        fadeInSpeed: 400
     }
 
     // CONNEXION
@@ -372,16 +380,17 @@ const Portfolio = () => {
 
             </>
         )
-        PopupboxManager.open({ content })
-    }
-
-    const popupboxConfigConnexion = {
-        titleBar: {
-            enable: true,
-            text: "Connexion with React and NodeJS"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
+        PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Connexion with React and NodeJS"
+                },
+                fadeIn: true,
+                fadeInSpeed: 500
+            }
+        })
     }
 
     // MONSTERS
@@ -412,17 +421,19 @@ const Portfolio = () => {
 
             </>
         )
-        PopupboxManager.open({ content })
+        PopupboxManager.open({ content });
+        PopupboxManager.update({
+            content,
+            config: {
+                titleBar: {
+                    text: "Introduce Monsters in React"
+                },
+                fadeIn: true,
+                fadeInSpeed: 500
+            }
+        })
     }
 
-    const popupboxConfigMonster = {
-        titleBar: {
-            enable: true,
-            text: "Connexion with React and NodeJS"
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
 
     return (
         <div className="portfolio-wrapper mt-5">
@@ -492,16 +503,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-            <PopupboxContainer {...popupboxConfigEcommerce} />
-            <PopupboxContainer {...popupboxConfigFreelance} />
-            <PopupboxContainer {...popupboxConfigCovid19} />
-            <PopupboxContainer {...popupboxConfigHello} />
-            <PopupboxContainer {...popupboxConfigTodoList} />
             <PopupboxContainer {...popupboxConfigEasyMPC} />
-            <PopupboxContainer {...popupboxConfigReactMovies} />
-            <PopupboxContainer {...popupboxConfigSendImages} />
-            <PopupboxContainer {...popupboxConfigConnexion} />
-            <PopupboxContainer {...popupboxConfigMonster} />
         </div>
     );
 }
