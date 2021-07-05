@@ -15,6 +15,9 @@ body {
   --primary-dark-another: rgba(52, 58, 6, 0);
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
+  --primary-black: #000000;
+  --primary-green: green;
+  --primary-transparent-black: rgba(0, 0, 0, 0.7);
 }
 
 /****************** NAVBAR ********************/
@@ -71,7 +74,7 @@ nav ul li {
   background: url("wall-and-laptop-background.jpg");
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -117,6 +120,7 @@ nav ul li {
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
+  cursor: pointer;
 }
 
 .btn-main-offer:hover {
@@ -202,6 +206,7 @@ nav ul li {
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background: var(--primary-white);
+  transition: 0.3s ease-in-out;
 }
 
 .services .box:hover {
@@ -223,7 +228,7 @@ nav ul li {
 }
 
 .experience-wrapper {
-  position: absolute;
+  position: relative;
   padding: 3.125rem;
   overflow: hidden;
 }
@@ -238,7 +243,7 @@ nav ul li {
   content: "";
   top: 0;
   left: 50%;
-  margin-left: -0.00625rem;
+  margin-left: -0.0625rem;
   width: 0.125rem;
   height: 100%;
   background: var(--primary-grey);
@@ -302,4 +307,294 @@ nav ul li {
     direction: ltr;
     width: 100%;
   }
+}
+
+/****************** PORTFOLIO ********************/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+/****************** OVERFLOW BOX ********************/
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 8rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/****************** OVERFLOW POPUPBOX ********************/
+.portfolio-image-popupbox {
+  width: 25rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+
+popupbox-wrapper {
+  margin-top: 7rem;
+}
+
+/****************** MEDIA ********************/
+@media (max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media (max-width: 570px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media (max-width: 280px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+/****************** TESTIMONIALS ********************/
+.testimonials {
+  background-image: url("testimonials-bg.jpg");
+  background-size: cover;
+  background-color: var(--primary-black);
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.testimonials h1 {
+  color: var(--primary-orange);
+  padding: 3rem 0;
+  text-transform: uppercase;
+}
+
+.testimonials-content {
+  text-align: center;
+  max-width: 53.125rem;
+  margin: 0 auto 2rem auto;
+  background: var(--primary-transparent-black);
+}
+
+.myCarousel {
+  color: var(--primary-white);
+  background: transparent;
+  margin-top: -6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* height: 17.875rem;*/
+}
+
+.carousel .slide img {
+  width: 10rem !important;
+  border-radius: 50%;
+}
+
+.myCarousel h3 {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.myCarousel p {
+  color: var(--primary-grey);
+}
+
+.carousel .slide {
+  background: transparent !important;
+  height: 100% !important;
+  padding-top: 2rem;
+}
+
+.carousel-root {
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+
+/****************** CONTACT ********************/
+.contacts {
+  background: black;
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
+
+/****************** INPUTS ********************/
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  /* color: var(--primary-grey); */
+  color: var(--primary-orange);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+input.form-control {
+  margin: -0.3rem;
+}
+
+textarea.form-control {
+  margin: -0.3rem;
+}
+
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-hover-red);
+  text-align: left;
+  border-radius: 2px;
+}
+
+.success-message {
+  color: var(--primary-white);
+  font-weight: 900;
+  background: var(--primary-green);
+  border-radius: 2px;
+}
+
+/****************** MEDIA ********************/
+@media(max-width: 768px) {
+  .contacts {
+    overflow-x: hidden;
+  }
+
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  left: -0.3rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-orange);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+/****************** FOOTER ********************/
+.footer {
+  background: #5A5655;
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }

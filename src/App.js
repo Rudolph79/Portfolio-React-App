@@ -7,6 +7,10 @@ import AboutMe from "./components/AboutMe";
 import Particles from "react-particles-js";
 import Services from "./components/Service";
 import Experience from "./components/Experience";
+import Portfolio from "./components/Portfolio";
+import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -39,6 +43,10 @@ const App = () => {
       <AboutMe />
       <Services />
       <Experience />
+      <Portfolio />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   );
 }
